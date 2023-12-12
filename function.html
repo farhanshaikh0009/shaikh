@@ -28,7 +28,7 @@ document.getElementById("demo").innerHTML = result ;
         }
      </script> -->
 
-     <p>Invoke (Call) a function that converts from Fahrenheit to Celsius:</p>
+     <!-- <p>Invoke (Call) a function that converts from Fahrenheit to Celsius:</p>
      <p id="demo"></p>
      <script>
         function toCelsius(f) { 
@@ -37,7 +37,28 @@ document.getElementById("demo").innerHTML = result ;
 
         let value = toCelsius(77);
         document.getElementById("demo").innerHTML = value ;
+     </script> -->
+
+     <!-- <p id="demo"></p>
+     <script>
+        document.getElementById("demo").innerHTML = "Hello Farhan";
+     </script> -->
+
+     <h2>JS HTML Dom</h2>
+     <p id="intro">Finding HTML Elements By ID</p>
+     <p>This example demonstrates the
+     <b>getElementById</b> Methode.</p>
+
+     <p id="demo"></p>
+
+     <script>
+        const Elements = 
+        document.getElementById("intro");
+
+        document.getElementById("demo").innerHTML = 
+        "This text frome the intro paragrph is:" + Elements.innerHTML ;
      </script>
+
 
 
     
