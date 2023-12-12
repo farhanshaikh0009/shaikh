@@ -44,7 +44,7 @@ document.getElementById("demo").innerHTML = result ;
         document.getElementById("demo").innerHTML = "Hello Farhan";
      </script> -->
 
-     <h2>JS HTML Dom</h2>
+     <!-- <h2>JS HTML Dom</h2>
      <p id="intro">Finding HTML Elements By ID</p>
      <p>This example demonstrates the
      <b>getElementById</b> Methode.</p>
@@ -52,12 +52,68 @@ document.getElementById("demo").innerHTML = result ;
      <p id="demo"></p>
 
      <script>
-        const Elements = 
-        document.getElementById("intro");
-
+        const Elements =  document.getElementById("intro");
+    
         document.getElementById("demo").innerHTML = 
         "This text frome the intro paragrph is:" + Elements.innerHTML ;
+     </script> -->
+
+
+     <!-- JS Arrow Functions -->
+
+     <!-- <h1>This example show the syntax of an Array Function, and how to use it. </h1>
+
+     <p id="demo"></p>
+     <script>
+        let myFunction = (a, b) => a * b;
+        document.getElementById("demo").innerHTML = myFunction (4, 8);
+        
+     </script> -->
+
+     <!-- <h1>This Example Show the syntex of a function, without the use of Arow function syntax.</h1>
+     <p id="demo"></p>
+
+     <script>
+        let Hello = "";
+
+        Hello = function () { 
+            return "Farhan Shaikh"
+        }
+        document.getElementById("demo").innerHTML = Hello();
+     </script> -->
+
+     <!-- <h1>This example shows the syntax of an Arrow Function, and how to use it.</h1>
+     <p id="demo"></p>
+
+     <script>
+        let Hello = "" ;
+        Hello = () => { 
+            return "Hello Farhan Shaikh";
+        }
+        document.getElementById("demo").innerHTML = Hello ();
+     </script> -->
+
+     <!-- <h1>this example shows an Arrow function without the brackets of the return keyword.</h1>
+     <p id="demo"></p>
+
+     <script>
+        let Hello = " " ;
+        Hello = () => "Hello Farhan Shaikh";
+
+        document.getElementById("demo").innerHTML = Hello ()
+     </script> -->
+
+     <h1>This example shows the syntax of an Arrow Function, with a parameter.</h1>
+     <p id="demo"></p>
+
+     <script>
+        let Hello = "" ;
+        Hello = (val) => "Hello Farhan Shaikh " + val ;
+
+        document.getElementById("demo").innerHTML = Hello("Farhan")
      </script>
+
+
 
 
 
