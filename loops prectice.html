@@ -94,7 +94,7 @@
     document.getElementById("demo").innerHTML = text ;
 </script> -->
 
-<h1>The for in statment can loop over array value ;</h1>
+<!-- <h1>The for in statment can loop over array value ;</h1>
 <p id="demo"></p>
 
 <script>
@@ -105,7 +105,111 @@
     text += numbers[X] + "<br>" ;
     }
     document.getElementById("demo").innerHTML = text ;
-</script>
+</script> -->
+
+
+<!-- <h2>Prectice of foor in loop</h2>
+<p id="demo"></p>
+<script>
+    const numbers = ["Farhan","Shaikh","Taskin","Shaikh",];
+
+    let text = " ";
+    for ( let X in numbers) { 
+        text += numbers[X] + "<br>" ;
+    }
+    document.getElementById("demo").innerHTML = text;
+</script> -->
+
+<!-- minin poject -->
+
+<!-- <h1>Tasbhi Counter</h1>
+<p id="demo">0</p>
+<button onclick="resetCounter()">Reset</button>
+<button onclick="incrementCounter()">+</button>
+<script>
+    let i=0;
+
+    function incrementCounter() { 
+        i++;
+        document.getElementById("demo").innerHTML = i;
+    }
+    function resetCounter(){
+        i = 0 ;
+        document.getElementById("demo").innerHTML = i ;
+    }
+
+    
+</script> -->
+
+    <!-- <h1>Do while Loops Example</h1>
+    <p id="demo"></p>
+
+    <script>
+        let text = "" ;
+        let i = 0;
+        while (i <= 10) { 
+            text += "<br> The Number is " + i ;
+            i++;
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script> -->
+
+    <!-- <h1>Do While Loop Example</h1>
+    <p id="demo"></p>
+    <script>
+        let text = "" ;
+        let i = 0 ;
+        do { 
+            text += "<br>The Number is" + i ;
+            i++;
+        } while (i <= 5) ;
+        document.getElementById("demo").innerHTML = text ;
+    </script> -->
+
+
+    <!-- <h1>Java script Randome Number Get Like OTP</h1>
+    
+    <button 
+    onclick="document.getElementById('demo').innerHTML = getRandInteger(1000,10000)">Get OTP</button>
+    <p id="demo"></p>
+
+    <script>
+        function getRandInteger(min, max) { 
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+    </script> -->
+
+
+    <!-- <h1>Js MAP Object</h1>
+    <p id="demo"></p>
+    <script>
+        //creat a map
+        const food = new Map ([
+            ["Dabeli", 45],
+            ["Vadapav", 20],
+            ["Puaf", 30],
+            ["Whater Bottel", 10],
+            ["Hankey", 5]
+        ]);
+        document.getElementById("demo").innerHTML = food.get("Vadapav");
+    </script> -->
+
+    <h1>Js MAP.set Object</h1>
+    <p id="demo"></p>
+    <script>
+        //creat a map
+        const food = new Map ()
+           food.set ("Dabeli", 45),
+           food.set ("Vadapav", 20),
+           food.set ("Puaf", 30),
+           food.set ("Whater Bottel", 10),
+           food.set ("Hankey", 5)
+       
+        document.getElementById("demo").innerHTML = food.get("Vadapav");
+    </script>
+
+
+
 
 
 
