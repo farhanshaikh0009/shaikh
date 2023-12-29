@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <style>
+        #panel, #flip { 
+            padding: 10px;
+            text-align: center;
+            color: black;
+            background-color: #f3f400;
+            border: 2px solid black;
+        }
+        #panel { 
+            padding: 50px;
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function() { 
+            $("#flip").click(function() { 
+                $("#panel").slideDown("slow")
+            });
+        });
+    </script>
+    <div id="flip">Click To Slide down Panel</div>
+    <div id="panel">Hello Farhan Shaikh</div> -->
+
+    <!-- <style>
+        * { 
+            padding: 0px;
+            margin: 0px;
+        }
+        button{ 
+            background-color: aqua;
+            color: black;
+            padding: 10px 30px;
+            border-radius: 5px;
+        }
+    </style>
+
+
+<script>
+    $(document).ready(function() { 
+        $("button").click(function() { 
+            $(".box").animate({
+                left: '250px',
+                opacity:'0.5',
+                height:'98vh',
+                width:'98vw'
+            })
+        })
+    })
+</script>
+
+    <button>Start Animation</button>
+    <div class="box"
+    style="background-color: blueviolet; width: 100px; height: 100px;"
+    ></div> -->
+
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function() { 
+                $(".box").animate ({
+                    height:'toggle',
+                })
+            })
+        })
+    </script>
+    <button>Start Animation</button>
+    <div class="box"
+    style="background-color: blueviolet; width: 100px; height: 100px;"
+    ></div> -->
+
+
+    <!-- <script>
+        $(document).ready(function() { 
+            $("button").click(function() { 
+                $("h1").hide("slow", function() { 
+                    alert("Now This Paragraph is hide")
+                })
+            })
+        })
+    </script>
+    <button>Hide</button>
+    <h1>This is a paragraph is now going To hide</h1> -->
+
+    <!-- <script>
+        $(document).ready(function() { 
+            $("button").click(function() { 
+                $("h1").css("color", "#711DB0").slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+
+    <h1>Hello Farhan Shaikh</h1>
+    <button>Clicke Me</button> -->
+
+    <!-- <script>
+        $(document).ready(function() { 
+            $("#btn1").click(function() { 
+                alert("text:" + $("h1").text());
+            });
+            $("#btn2").click(function() { 
+                alert("html" + $("h1").html());;
+            });
+        });
+        
+    </script>
+
+    <h1>This Is A some bold text in button</h1>
+    <button id="btn1">Some Text Here</button>
+    <button id="btn2">Html of Text</button> -->
+
+    <!-- <script>
+        $(document).ready(function() { 
+            $("button").click(function() { 
+                alert("Value is " + $("#text").val());
+            });
+        });
+    </script>
+
+    <p>NAME:<input type="text" id="text" value=""></p>
+    <button>Show Value</button> -->
+
+    <script>
+        $(document).ready(function() { 
+            $("#btn1").click(function() { 
+                $("#text1").text("Hello World")
+            });
+            $("#btn2").click(function() { 
+                $("#text2").html("<b>Hello World Sec</b>")
+            });
+            $("#btn3").click(function() { 
+                $("#text3").val("Farhan Shaikh");
+            });
+        });
+    </script>
+    
+    <p id="text1">This Is a Simple Text</p>
+    <p id="text2">This is a Anouother Text</p>
+    <p>Input field: <input type="text" value="Type Here..." id="text3"></p>
+
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show HTML</button>
+    <button id="btn3">Set Value</button>
+</body>
+</html>
