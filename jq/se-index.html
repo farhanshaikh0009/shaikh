@@ -127,7 +127,7 @@
     <p>NAME:<input type="text" id="text" value=""></p>
     <button>Show Value</button> -->
 
-    <script>
+    <!-- <script>
         $(document).ready(function() { 
             $("#btn1").click(function() { 
                 $("#text1").text("Hello World")
@@ -147,6 +147,19 @@
 
     <button id="btn1">Show Text</button>
     <button id="btn2">Show HTML</button>
-    <button id="btn3">Set Value</button>
+    <button id="btn3">Set Value</button> -->
+
+    <script>
+        function appendText()  {
+            var text1 = "<p>Text.</p>";
+            var text2 = $("<p></p>").text("Text");
+            var text3 = document.createElement("p");
+            text3.innerHTML = "Text.";
+            $("body").append(text1, text2, text3);
+        }
+    </script>
+
+    <h1>This is a Paragraph.</h1><br>
+    <button onclick="appendText()">Append Text</button>
 </body>
 </html>
