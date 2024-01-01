@@ -148,7 +148,7 @@
     <button id="btn1">Show Text</button>
     <button id="btn2">Show HTML</button>
     <button id="btn3">Set Value</button> -->
-
+<!-- 
     <script>
         function appendText()  {
             var text1 = "<p>Text.</p>";
@@ -160,6 +160,38 @@
     </script>
 
     <h1>This is a Paragraph.</h1><br>
-    <button onclick="appendText()">Append Text</button>
+    <button onclick="appendText()">Append Text</button> -->
+
+    <!-- <script>
+        $(document).ready(function() { 
+            $("#btn1").click(function() { 
+                $("img").before("<b>Before</b>");
+            });
+            $("#btn2").click(function() { 
+                $("img").after("<b>After</b>");
+            });
+        });
+    </script>
+
+    
+    <img src="https://images.sftcdn.net/images/t_app-icon-m/p/77d5856a-99eb-11e6-bb7c-00163ed833e7/2198185158/photo-lab-logo.png" alt="jQuery" width="140" height="140"><br><br>
+
+    <button id="btn1">Add Before </button>
+    <button id="btn2">Add After </button> -->
+
+    <script>
+        function afterText () { 
+            var text1 = "<b>I </b>";
+            var text2 = $("<i></i>").text("Love ");
+            var text3 = document.createElement("b");
+            text3.innerHTML = "SHAIKH";
+            $("img").after(text1, text2, text3);
+        }
+    </script>
+    <img src="https://images.sftcdn.net/images/t_app-icon-m/p/77d5856a-99eb-11e6-bb7c-00163ed833e7/2198185158/photo-lab-logo.png" alt="jQuery" width="140" height="140"><br><br>
+    <button onclick="afterText()">Insert After</button>
+
+
+
 </body>
 </html>
